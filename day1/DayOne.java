@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
 
-class Main1 {
-  public static void main1(String[] args) {
+class DayOne {
+  public DayOne() {
     int highestCalorieCount =0;
     int currentCalorieCount =0;
     List<Integer> elfList = new ArrayList<Integer>();
     try {
-    File myObj = new File("input.txt");
+    File myObj = new File("day1/input.txt");
       Scanner myReader = new Scanner(myObj);
       while (myReader.hasNextLine()) {
         String data = myReader.nextLine();

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class Main2 {
+class DayTwo {
 
   public static int resolve(String input) {
     String result = (input.split(" "))[1];
@@ -51,7 +51,7 @@ class Main2 {
 
   }
 
-  public static void main2(String[] args) {
+  public DayTwo() {
     int highestCalorieCount = 0;
     int score = 0;
     List<Integer> elfList = new ArrayList<Integer>();
@@ -63,7 +63,7 @@ class Main2 {
         int result = resolve(data);
         if (result == -1)
           return;
-        System.out.println("result: " + result);
+        //System.out.println("result: " + result);
         score += result;
       }
       System.out.println("game total = " + score);
