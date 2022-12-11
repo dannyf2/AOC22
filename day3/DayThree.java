@@ -32,8 +32,7 @@ class DayThree extends DayXSolutionAbs{
     return result;
   }
   
-  public void solvePartOne(){
-    List<String> input = IR.getInput();
+  public String solvePartOne(List<String> input){
     String line1, line2;
     int result=0;
     for(String line : input){
@@ -42,10 +41,10 @@ class DayThree extends DayXSolutionAbs{
       String dups = findDuplicates(line1, line2);
       result += letterToValue(dups);
     }
-    print("part1: " + Integer.toString(result));
+    return ("part1: " + Integer.toString(result));
   }
 
-  public void solvePartTwo(){
+  public String solvePartTwo(){
     List<String> input = IR.getInput();
     int result=0;
     int lineNum=1;
@@ -64,7 +63,7 @@ class DayThree extends DayXSolutionAbs{
       }
       lineNum++;
     }
-    print("part2: " + Integer.toString(result));
+    return ("part2: " + Integer.toString(result));
   }
 
   public String findBadge(String pack1, String pack2, String pack3){
